@@ -1,22 +1,11 @@
---------------------------------------------------------------------------------
--- Company: FE
--- Engineer: A. Trost
---
--- Design Name: testProc
--- Project Name: DIVS2016, 7. vaja, testna struktura
--- Target Device: Red Pitaya
--- Tool versions: Vivado 2015
--- Description: Testna struktura za vmesnik in skaliranje na Red Pitayi
---------------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.numeric_std.all;
 
-entity TestProc is
-end TestProc;
+entity red_pitaya_proc_tb is
+end red_pitaya_proc_tb;
 
-architecture Behavioral of TestProc is
+architecture Behavioral of red_pitaya_proc_tb is
 
   component red_pitaya_proc
     port (
@@ -50,7 +39,7 @@ architecture Behavioral of TestProc is
   signal sine : memory_type := (0, 16, 31, 45, 58, 67, 74, 77, 77, 74, 67, 58, 45, 31, 16, 0,
                                 -16, -31, -45, -58, -67, -74, -77, -77, -74, -67, -58, -45, -31, -16);
 
-  -- Kontrola simulacije
+  -- Simulation control
   signal sim : std_logic := '0';
 
   constant T  : time := 50 ns;
@@ -68,7 +57,7 @@ begin
     adc_i   => adc_i,
     adc_o   => adc_o);
 
--- Definiraj uro
+-- Define the clock
   clk_process : process
   begin
     if sim = '0' then
@@ -81,7 +70,7 @@ begin
     end if;
   end process;
 
--- Generiraj sinusni signal iz tabele
+-- Generate a sine signal from the table
   singen : process(clk_i)
   begin
     if(rising_edge(clk_i)) then
@@ -93,23 +82,23 @@ begin
     end if;
   end process;
 
--- Nastavi signale poenostavljenega vodila AXI
+-- Sets the simplified AXI bus signals
   stim_proc : process
   begin
-    rstn_i  <= '0';                     -- aktiven reset
+    rstn_i  <= '0';                     -- active reset
     addr_i  <= "00000000000000000000000000000000";
     wdata_i <= "00000000000000000000000000000000";
     wen_i   <= '0'; ren_i <= '0';
 
     wait for T;
-    rstn_i  <= '1';  -- deaktiviraj reset, pisanje v register
+    rstn_i  <= '1';  -- deactivate reset, write to register
     wdata_i <= x"00000005";
     wen_i   <= '1';
 
     wait for T;
     wen_i <= '0';
 
-    wait for 100*T;                      -- vpis nove vrednosti v register
+    wait for 100*T;                      -- entry of a new value in the register
     wdata_i <= x"00000009";
     wen_i   <= '1';
 
@@ -117,7 +106,7 @@ begin
     wen_i <= '0';
 
     wait for 100*T;
-    sim <= '1';                         -- ustavi simulacijo
+    sim <= '1';                         -- stop the simulation
     wait;
   end process;
 
