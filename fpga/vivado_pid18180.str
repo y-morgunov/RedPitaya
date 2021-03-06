@@ -1,0 +1,2618 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 18180
+License: Customer
+
+Current time: 	Sat Mar 06 11:54:28 GMT+07:00 2021
+Time zone: 	GMT+07:00 (Asia/Barnaul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	y.morgunov
+User home directory: C:/Users/y.morgunov
+User working directory: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga
+User country: 	RU
+User language: 	ru
+User locale: 	ru_RU
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/y.morgunov/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/y.morgunov/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/y.morgunov/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/vivado.log
+Vivado journal file location: 	C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/vivado.jou
+Engine tmp dir: 	C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/.Xil/Vivado-18180-DEV-WS1
+
+Xilinx Environment Variables
+----------------------------
+VIVADO_HLS_HOME: C:\Xilinx\Vivado\2020.1\bin\..
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,016 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// bz (cs):  Sourcing Tcl script 'red_pitaya_vivado_project_Z10.tcl' : addNotify
+// Tcl Message: source red_pitaya_vivado_project_Z10.tcl 
+// Tcl Message: # set prj_name [lindex $argv 0] # puts "Project name: $prj_name" 
+// Tcl Message: Project name: v0.94 
+// Tcl Message: # cd prj/$prj_name # set path_brd ../../brd # set path_rtl rtl # set path_ip  ip # set path_bd  project/redpitaya.srcs/sources_1/bd/system/hdl # set path_sdc ../../sdc # set path_sdc_prj sdc # set_param board.repoPaths [list $path_brd] 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: # set part xc7z010clg400-1 # create_project -part $part -force redpitaya ./project 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+78253kb) [00:00:10]
+// [Engine Memory]: 1,016 MB (+913877kb) [00:00:10]
+// [GUI Memory]: 95 MB (+15333kb) [00:00:10]
+// [GUI Memory]: 114 MB (+14368kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3469 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,016 MB. GUI used memory: 102 MB. Current time: 3/6/21, 11:54:28 AM GMT+07:00
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1028.809 ; gain = 0.000 
+// Tcl Message: INFO: [BD::TCL 103-2003] Currently there is no design <system> in project, so creating one... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 121 MB (+1100kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  1675 ms.
+// Tcl Message: Wrote  : <C:\Users\y.morgunov\workspace\A014-RedPitaya\RedPitaya\fpga\prj\v0.94\project\redpitaya.srcs\sources_1\bd\system\system.bd>  
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: INFO: [BD::TCL 103-2004] Making design <system> as current_bd_design. 
+// Tcl Message: ## common::send_gid_msg -ssname BD::TCL -id 2005 -severity "INFO" "Currently the variable <design_name> is equal to \"$design_name\"." 
+// Tcl Message: INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "system". 
+// Tcl Message: INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:   xilinx.com:ip:axi_protocol_converter:2.1 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:processing_system7:5.5 xilinx.com:ip:xadc_wiz:3.3 xilinx.com:ip:xlconstant:1.1  . 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z010clg400-1 
+// TclEventType: REPORT_IP_STATUS_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,153 MB. GUI used memory: 52 MB. Current time: 3/6/21, 11:54:46 AM GMT+07:00
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// [Engine Memory]: 1,153 MB (+89922kb) [00:00:31]
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1188.648 ; gain = 159.840 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Slave segment '/M_AXI_GP0/Reg' is being assigned into address space '/processing_system7/Data' at <0x4000_0000 [ 1G ]>. Slave segment '/xadc/s_axi_lite/Reg' is being assigned into address space '/processing_system7/Data' at <0x83C0_0000 [ 64K ]>. Slave segment '/processing_system7/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/S_AXI_HP0' at <0x0000_0000 [ 512M ]>. Slave segment '/processing_system7/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/S_AXI_HP1' at <0x0000_0000 [ 512M ]>. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <C:\Users\y.morgunov\workspace\A014-RedPitaya\RedPitaya\fpga\prj\v0.94\project\redpitaya.srcs\sources_1\bd\system\system.bd>  Wrote  : <C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ui/bd_c954508f.ui>  
+// Tcl Message: # generate_target all [get_files    system.bd] 
+// Tcl Message: VHDL Output written to : C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/synth/system.v VHDL Output written to : C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/sim/system.v VHDL Output written to : C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/hdl/system_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_protocol_converter_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset . 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,172 MB. GUI used memory: 53 MB. Current time: 3/6/21, 11:55:06 AM GMT+07:00
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant . 
+// Tcl Message: Exporting to file C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/hw_handoff/system.hwh Generated Block Design Tcl file C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl Generated Hardware Definition File C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/synth/system.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1188.648 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: # add_files                         ../../$path_rtl # add_files                         $path_rtl # add_files                         $path_bd # add_files -fileset constrs_1      $path_sdc/red_pitaya.xdc # add_files -fileset constrs_1      $path_sdc_prj/red_pitaya.xdc # import_files -force 
+// Tcl Message: INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: # set_property top red_pitaya_top [current_fileset] # update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// Elapsed time: 58 seconds
+dismissDialog("Sourcing Tcl script 'red_pitaya_vivado_project_Z10.tcl'"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,203 MB. GUI used memory: 75 MB. Current time: 3/6/21, 11:55:36 AM GMT+07:00
+// [Engine Memory]: 1,221 MB (+11385kb) [00:01:24]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 133 MB (+6146kb) [00:01:27]
+// Elapsed time: 306 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+// Elapsed time: 59 seconds
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cm (Q, F)
+// Elapsed time: 51 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // ac (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "red_pitaya_proc"); // ac (Q, F)
+// Elapsed time: 35 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new 
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; red_pitaya_proc.vhd ; xil_defaultlib ; <Local to Project>", 0, "red_pitaya_proc.vhd", 2); // bQ (J, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; red_pitaya_proc.vhd ; xil_defaultlib ; <Local to Project>", 0, "red_pitaya_proc.vhd", 2, false, false, false, false, true); // bQ (J, c) - Double Click
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; red_pitaya_proc.vhd ; xil_defaultlib ; <Local to Project>", 0, "1", 1); // bQ (J, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; red_pitaya_proc.vhd ; xil_defaultlib ; <Local to Project>", 0, "1", 1, false, false, false, false, true); // bQ (J, c) - Double Click
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 171 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new/red_pitaya_proc.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new/red_pitaya_proc.vhd 
+// I (cs): Define Module: addNotify
+setText(PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, "red_pitaya_proc"); // ac (Q, I)
+setText(PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, "red_pitaya_proc"); // ac (Q, I)
+// Elapsed time: 24 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk_i", 0, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 1, (String) null, 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rstn_i", 1, "Port Name", 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_i", 2, "Port Name", 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wdata_i", 3, "Port Name", 0); // ab (J, I)
+// Elapsed time: 16 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Define Module"); // I (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 142 MB (+3299kb) [00:10:48]
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 15 seconds
+setFileChooser("C:/Users/y.morgunov/workspace/A014-RedPitaya/ext example/rtl/red_pitaya_proc.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 35 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{C:/Users/y.morgunov/workspace/A014-RedPitaya/ext example/rtl/red_pitaya_proc.vhd}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 27, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 27, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 141 seconds
+selectCodeEditor("red_pitaya_proc.vhd", 104, 169); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 104, 169, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("red_pitaya_proc.vhd", 110, 180); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 110, 180, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_proc.vhd", 'c'); // bP (w, cs)
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), ps : red_pitaya_ps (red_pitaya_ps.sv)]", 4, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// Elapsed time: 31 seconds
+selectCodeEditor("red_pitaya_top.sv", 61, 285); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 168, 121); // bP (w, cs)
+// Elapsed time: 51 seconds
+selectCodeEditor("red_pitaya_top.sv", 54, 138); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 44, 123); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 16, 346); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 83 seconds
+selectCodeEditor("red_pitaya_top.sv", 107, 351); // bP (w, cs)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bz (cs)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 297, 332); // bP (w, cs)
+// Elapsed time: 214 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// f (cs): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cs)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Mar  6 12:16:36 2021] Launched impl_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1236.660 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1729 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1083 ms. Increasing delay to 3249 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 102 seconds
+selectCodeEditor("red_pitaya_proc.vhd", 165, 347); // bP (w, cs)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 160 MB (+10745kb) [00:24:07]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Failed: addNotify
+// Elapsed time: 184 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag (cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_proc/ack_o_reg/Q, and i_daisy/sys_ack_o_reg/Q.. ]", 12, true); // ah (J, cs) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_proc/ack_o_reg/Q, and i_daisy/sys_ack_o_reg/Q.. ]", 12, true, false, false, false, false, true); // ah (J, cs) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_proc/ack_o_reg/Q, and i_daisy/sys_ack_o_reg/Q.. ]", 12, true); // ah (J, cs) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_proc/ack_o_reg/Q, and i_daisy/sys_ack_o_reg/Q.. ]", 12, true, false, false, false, false, true); // ah (J, cs) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_proc/ack_o_reg/Q, and i_daisy/sys_ack_o_reg/Q.. ]", 12, true); // ah (J, cs) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_proc/ack_o_reg/Q, and i_daisy/sys_ack_o_reg/Q.. ]", 12, true, false, false, false, false, true); // ah (J, cs) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_proc/ack_o_reg/Q, and i_daisy/sys_ack_o_reg/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net ps/axi_slave_gp0/axi\\\\.RDATA_reg[8]_0 has multiple drivers: ps/axi_slave_gp0/axi\\\\.RDATA[8]_i_4/O, and i_daisy/sys_rdata_o_reg[8]/Q.. ]", 13, false); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_proc/ack_o_reg/Q, and i_daisy/sys_ack_o_reg/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net ps/axi_slave_gp0/axi\\\\.RDATA_reg[8]_0 has multiple drivers: ps/axi_slave_gp0/axi\\\\.RDATA[8]_i_4/O, and i_daisy/sys_rdata_o_reg[8]/Q.. ]", 13, false, false, false, false, false, true); // ah (J, cs) - Double Click
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+selectCodeEditor("red_pitaya_top.sv", 23, 348); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 170 MB (+1980kb) [00:27:39]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 3 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: FILE_SET_CHANGE
+// bz (cs):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Mar  6 12:22:03 2021] Launched synth_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/synth_1/runme.log [Sat Mar  6 12:22:03 2021] Launched impl_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1248.535 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 140, 116); // bP (w, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES, "Language Templates"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES
+// a (cs): Language Templates: addNotify
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL]", 1, true); // a (J, a) - Node
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL, Device Macro Instantiation]", 3, true); // a (J, a) - Node
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL, Common Constructs]", 2, true); // a (J, a) - Node
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL, Common Constructs, Architecture, Component & Entity]", 3, true); // a (J, a) - Node
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Templates_search"); // x (g, a): TRUE
+// Elapsed time: 15 seconds
+setText("PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE_SEARCH_FIELD", "reg", true); // OverlayTextField (n, a)
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches]", 15, true); // a (J, a) - Node
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Clock Components, Clock Buffers, Multi-Region Clock Buffer (BUFMR)]", 15, false); // a (J, a)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches]", 43, true); // a (J, a) - Node
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Double Data Rate, Dual-Clock, Input DDR Register (IDDR_2CLK)]", 45, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate]", 45, true); // a (J, a) - Node
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Async Clear and CE (FDCE)]", 46, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Async Preset and CE (FDPE)]", 47, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Set and CE (FDSE)]", 49, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Async Preset and CE (FDPE)]", 47, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Async Clear and CE (FDCE)]", 46, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Async Preset and CE (FDPE)]", 47, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Async Preset and CE (FDPE)]", 47, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Async Preset and CE (FDPE)]", 47, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Set and CE (FDSE)]", 49, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Set and CE (FDSE)]", 49, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Set and CE (FDSE)]", 49, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Set and CE (FDSE)]", 49, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Reset and CE (FDRE)]", 48, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Set and CE (FDSE)]", 49, false); // a (J, a)
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,236 MB. GUI used memory: 102 MB. Current time: 3/6/21, 12:25:37 PM GMT+07:00
+// Elapsed time: 94 seconds
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Set and CE (FDSE)]", 49, false); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF w/ Sync Set and CE (FDSE)]", 49, false, false, false, false, false, true); // a (J, a) - Double Click
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'c'); // c (c, a)
+dismissDialog("Language Templates"); // a (cs)
+selectCodeEditor("red_pitaya_proc.vhd", 174, 134); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_proc.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 354, 400); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 178, 107); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES, "Language Templates"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES
+// a (cs): Language Templates: addNotify
+collapseTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, Verilog]", 0); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL, Device Primitive Instantiation, Artix-7, Registers & Latches]", 53, true); // a (J, a) - Node
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate]", 58, true); // a (J, a) - Node
+collapseTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL, Device Primitive Instantiation, Artix-7, Registers & Latches, Double Data Rate]", 54); // a (J, a)
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate]", 55); // a (J, a)
+selectTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL, Device Primitive Instantiation, Artix-7, Registers & Latches, Single Data Rate, Posedge D-FF /w Sync Set, and CE (FDSE)]", 59, false); // a (J, a)
+// Elapsed time: 22 seconds
+typeControlKey(null, null, 'c'); // c (c, a)
+selectButton(RDIResource.BaseDialog_CLOSE, "Close"); // a (a)
+dismissDialog("Language Templates"); // a (cs)
+selectCodeEditor("red_pitaya_proc.vhd", 44, 344); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 258, 386); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_proc.vhd", 'v'); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 66, 140, true, false, false, false, false); // bP (w, cs) - Shift Key
+selectCodeEditor("red_pitaya_proc.vhd", 72, 139); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 111, 119); // bP (w, cs)
+typeControlKey(null, null, 'z');
+selectCodeEditor("red_pitaya_proc.vhd", 186, 254); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 103, 189); // bP (w, cs)
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("red_pitaya_proc.vhd", 191, 389, true, false, false, false, false); // bP (w, cs) - Shift Key
+selectCodeEditor("red_pitaya_proc.vhd", 178, 313); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES, "Language Templates"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES
+// a (cs): Language Templates: addNotify
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ag)
+dismissDialog("Bitstream Generation Completed"); // ag (cs)
+selectButton(RDIResource.BaseDialog_CLOSE, "Close"); // a (a)
+dismissDialog("Language Templates"); // a (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+selectCodeEditor("red_pitaya_top.sv", 259, 331); // bP (w, cs)
+// Elapsed time: 72 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 289, 349); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("red_pitaya_top.sv", 84, 213, true, false, false, false, false); // bP (w, cs) - Shift Key
+selectCodeEditor("red_pitaya_top.sv", 84, 213); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cs): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Mar  6 12:29:57 2021] Launched synth_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 62 seconds
+selectCodeEditor("red_pitaya_top.sv", 149, 231); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 149, 231, false, false, false, false, true); // bP (w, cs) - Double Click
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Completed: addNotify
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Sat Mar  6 12:32:19 2021] Launched impl_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz (cs)
+selectCodeEditor("red_pitaya_top.sv", 149, 317); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 149, 317, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+// TclEventType: RUN_STATUS_CHANGE
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_i"); // l (au, cs)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Failed: addNotify
+// Elapsed time: 70 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ag)
+dismissDialog("Implementation Failed"); // ag (cs)
+selectCodeEditor("red_pitaya_top.sv", 193, 147); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 194, 143); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 128, 147, true, false, false, false, false); // bP (w, cs) - Shift Key
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 143, 313); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 143, 313, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+typeControlKey(null, null, 'z');
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("red_pitaya_top.sv", 312, 334); // bP (w, cs)
+// Elapsed time: 27 seconds
+selectCodeEditor("red_pitaya_top.sv", 138, 336); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 138, 336, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_o", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_o"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_o"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_o"); // l (au, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "adc_o"); // l (au, cs)
+// Elapsed time: 34 seconds
+selectCodeEditor("red_pitaya_top.sv", 180, 283); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("red_pitaya_top.sv", 200, 117); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("red_pitaya_top.sv", 328, 126); // bP (w, cs)
+typeControlKey(null, null, 'z');
+selectCodeEditor("red_pitaya_top.sv", 44, 233); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 44, 233, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("red_pitaya_top.sv", 173, 227, true, false, false, false, false); // bP (w, cs) - Shift Key
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 279, 262); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 279, 262, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("red_pitaya_top.sv", 280, 260); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 301, 262); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 263, 265, true, false, false, false, false); // bP (w, cs) - Shift Key
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("red_pitaya_top.sv", 273, 261); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("red_pitaya_top.sv", 150, 218); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 244, 227); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("red_pitaya_top.sv", 242, 203); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("red_pitaya_top.sv", 182, 176); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 62, 169); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 41 seconds
+selectCodeEditor("red_pitaya_top.sv", 140, 210); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 140, 210, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("red_pitaya_top.sv", 163, 218); // bP (w, cs)
+// Elapsed time: 38 seconds
+selectCodeEditor("red_pitaya_top.sv", 256, 245); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 316, 295); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 349, 322); // bP (w, cs)
+// Elapsed time: 84 seconds
+selectCodeEditor("red_pitaya_top.sv", 479, 95); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 341, 94); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("red_pitaya_top.sv", 221, 320); // bP (w, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cs)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Mar  6 12:40:33 2021] Launched synth_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/synth_1/runme.log [Sat Mar  6 12:40:33 2021] Launched impl_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("red_pitaya_top.sv", 233, 197); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-2715] syntax error near red_pitaya_asg [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/imports/fpga/prj/v0.94/rtl/red_pitaya_top.sv:491]. ]", 7, false); // ah (J, cs)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\y.morgunov\workspace\A014-RedPitaya\RedPitaya\fpga\prj\v0.94\project\redpitaya.srcs\sources_1\imports\fpga\prj\v0.94\rtl\red_pitaya_top.sv;-;;-;16;-;line;-;491;-;;-;16;-;"); // ah (J, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("red_pitaya_top.sv", 186, 289); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 191, 276); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("red_pitaya_top.sv", 21, 279); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cs):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Mar  6 12:41:33 2021] Launched synth_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/synth_1/runme.log [Sat Mar  6 12:41:33 2021] Launched impl_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1270.031 ; gain = 0.000 
+// 'c' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("red_pitaya_top.sv", 98, 262); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 98, 262, false, false, false, false, true); // bP (w, cs) - Double Click
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ag)
+dismissDialog("Synthesis Failed"); // ag (cs)
+selectCodeEditor("red_pitaya_top.sv", 65, 266); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 65, 266, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("red_pitaya_top.sv", 230, 238); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 74, 269, false, true, false, false, false); // bP (w, cs) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_scope : red_pitaya_scope (red_pitaya_scope.v)]", 9, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_scope : red_pitaya_scope (red_pitaya_scope.v), i_dfilt1_cha : red_pitaya_dfilt1 (red_pitaya_dfilt1.sv)]", 10, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("red_pitaya_scope.v", 86, 69); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_scope.v", 'v'); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 187, 281); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_scope.v", 4); // m (l, cs)
+selectCodeEditor("red_pitaya_scope.v", 196, 78); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_scope.v", 'v'); // bP (w, cs)
+selectCodeEditor("red_pitaya_scope.v", 381, 107); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("red_pitaya_scope.v", 528, 252); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("red_pitaya_scope.v", 436, 208); // bP (w, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cs):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Sat Mar  6 12:45:02 2021] Launched synth_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/synth_1/runme.log [Sat Mar  6 12:45:02 2021] Launched impl_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bz (cs)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bz (cs)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bz (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Failed: addNotify
+// Elapsed time: 51 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag (cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_daisy/sys_ack_o_reg/Q, and i_proc/ack_o_reg/Q.. ]", 12, true); // ah (J, cs) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 13, false); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 13, false, false, false, false, false, true); // ah (J, cs) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_daisy/sys_ack_o_reg/Q, and i_proc/ack_o_reg/Q.. ]", 12, true); // ah (J, cs) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_daisy/sys_ack_o_reg/Q, and i_proc/ack_o_reg/Q.. ]", 12, true, false, false, false, false, true); // ah (J, cs) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_daisy/sys_ack_o_reg/Q, and i_proc/ack_o_reg/Q.. ]", 12, true); // ah (J, cs) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net i_daisy/UNCONN_OUT_0 has multiple drivers: i_daisy/sys_ack_o_reg/Q, and i_proc/ack_o_reg/Q.. ]", 12, true); // ah (J, cs) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 103, 129); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 103, 129, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_proc.vhd", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+selectCodeEditor("red_pitaya_top.sv", 344, 48); // bP (w, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "red_pitaya_proc", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "red_pitaya_proc"); // l (au, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "red_pitaya_proc"); // l (au, cs)
+selectCodeEditor("red_pitaya_top.sv", 132, 312); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 132, 312, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_proc", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_proc"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_proc"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_proc"); // l (au, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_proc"); // l (au, cs)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_daisy : red_pitaya_daisy (red_pitaya_daisy.v)]", 19, true); // B (F, cs) - Node
+selectCodeEditor("red_pitaya_top.sv", 268, 155); // bP (w, cs)
+// Elapsed time: 21 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "daisy"); // l (au, cs)
+selectCodeEditor("red_pitaya_top.sv", 138, 210); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 138, 210, false, false, false, false, true); // bP (w, cs) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("red_pitaya_top.sv", 136, 74); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 136, 74, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("red_pitaya_top.sv", 144, 77); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 144, 77, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "i_daisy"); // l (au, cs)
+// Elapsed time: 22 seconds
+selectCodeEditor("red_pitaya_top.sv", 165, 383); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 165, 383, false, false, false, false, true); // bP (w, cs) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("red_pitaya_top.sv", 25, 399); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 307, 420); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'v'); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("red_pitaya_top.sv", 179, 194); // bP (w, cs)
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[4]", true); // l (au, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[6]", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[6]"); // l (au, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[5]", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[5]"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[5]"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[5]"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[5]"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[5]"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys[5]"); // l (au, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys"); // l (au, cs)
+selectCodeEditor("red_pitaya_top.sv", 152, 232); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("red_pitaya_top.sv", 186, 229); // bP (w, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cs)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Mar  6 12:51:50 2021] Launched synth_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/synth_1/runme.log [Sat Mar  6 12:51:50 2021] Launched impl_1... Run output will be captured here: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bz (cs)
+selectLabel((HResource) null, "s_axi_hp0_1"); // l (ep, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cs)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+// Elapsed time: 38 seconds
+selectCodeEditor("red_pitaya_top.sv", 255, 156); // bP (w, cs)
+selectCodeEditor("red_pitaya_top.sv", 255, 156, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_top.sv", 'c'); // bP (w, cs)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "FIXED_IO_ps_clk", true); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "FIXED_IO_ps_clk"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "FIXED_IO_ps_clk"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "FIXED_IO_ps_clk"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "FIXED_IO_ps_clk"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "FIXED_IO_ps_clk"); // l (au, cs)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "FIXED_IO_ps_clk"); // l (au, cs)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (am, cs)
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,236 MB. GUI used memory: 97 MB. Current time: 3/6/21, 12:55:38 PM GMT+07:00
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Completed: addNotify
+// Elapsed time: 211 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cs):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,313 MB. GUI used memory: 98 MB. Current time: 3/6/21, 12:57:43 PM GMT+07:00
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,828 MB. GUI used memory: 97 MB. Current time: 3/6/21, 12:57:54 PM GMT+07:00
+// [Engine Memory]: 1,828 MB (+572844kb) [01:03:40]
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.6s
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,949 MB (+30453kb) [01:03:41]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2756 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.232 . Memory (MB): peak = 1286.520 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 672 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2000.082 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2000.082 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2000.082 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 56 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 16 instances   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 2 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 38 instances  
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 3s
+// Device view-level: 0,0
+// WARNING: HEventQueue.dispatchEvent() is taking  1131 ms.
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 2137.875 ; gain = 865.473 
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 186 MB (+8199kb) [01:03:45]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 198 MB (+3033kb) [01:03:51]
+// [GUI Memory]: 208 MB (+27kb) [01:03:51]
+// [Engine Memory]: 2,053 MB (+7363kb) [01:03:52]
+// WARNING: HEventQueue.dispatchEvent() is taking  4880 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1969 ms.
+// [GUI Memory]: 226 MB (+7917kb) [01:03:55]
+// 'dZ' command handler elapsed time: 34 seconds
+// V (cs): Critical Messages: addNotify
+// Elapsed time: 35 seconds
+dismissDialog("Open Implemented Design"); // bz (cs)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (V)
+dismissDialog("Critical Messages"); // V (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,124 MB. GUI used memory: 164 MB. Current time: 3/6/21, 12:58:13 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 24548, 115381); // E (F, cs)
+// Device view-level: 0,9
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 43109, 143902); // E (F, cs)
+// Device view-level: 1,7
+// HMemoryUtils.trashcanNow. Engine heap size: 2,129 MB. GUI used memory: 183 MB. Current time: 3/6/21, 12:58:16 PM GMT+07:00
+// HMemoryUtils.trashcanNow. Engine heap size: 2,134 MB. GUI used memory: 164 MB. Current time: 3/6/21, 12:58:17 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 65371, 184673); // E (F, cs)
+// Device view-level: 3,1
+// [Engine Memory]: 2,156 MB (+172kb) [01:04:03]
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 66650, 186303); // E (F, cs)
+// Device view-level: 4,5
+// [GUI Memory]: 238 MB (+41kb) [01:04:04]
+// [GUI Memory]: 250 MB (+189kb) [01:04:05]
+// [GUI Memory]: 263 MB (+509kb) [01:04:05]
+// [GUI Memory]: 276 MB (+351kb) [01:04:05]
+// [Engine Memory]: 2,266 MB (+2316kb) [01:04:05]
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 67380, 186741); // E (F, cs)
+// Device view-level: 0,0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 77488, 69908); // E (F, cs)
+// Device view-level: 0,3
+// HMemoryUtils.trashcanNow. Engine heap size: 2,269 MB. GUI used memory: 211 MB. Current time: 3/6/21, 12:58:23 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 68070, 98561); // E (F, cs)
+// Device view-level: 1,7
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 81386, 104314); // E (F, cs)
+// Device view-level: 2,8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 86259, 106934); // E (F, cs)
+// Device view-level: 3,5
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 89240, 109040); // E (F, cs)
+// Device view-level: 0,0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,356 MB. GUI used memory: 214 MB. Current time: 3/6/21, 12:58:26 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 268207, 154747); // E (F, cs)
+// Device view-level: 1,0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 268816, 174072); // E (F, cs)
+// Device view-level: 1,8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 279341, 177936); // E (F, cs)
+// Device view-level: 2,7
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 285458, 179444); // E (F, cs)
+// Device view-level: 3,6
+// [Engine Memory]: 2,381 MB (+1707kb) [01:04:22]
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 287484, 180266); // E (F, cs)
+// Device view-level: 4,8
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 164 MB. Current time: 3/6/21, 12:58:39 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 287408, 180641); // E (F, cs)
+// Device view-level: 0,0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 141287, 46831); // E (F, cs)
+// Device view-level: 0,9
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 154718, 75768); // E (F, cs)
+// Device view-level: 2,0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 160272, 88223); // E (F, cs)
+// Device view-level: 2,8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 167560, 93404); // E (F, cs)
+// Device view-level: 0,0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 193 MB. Current time: 3/6/21, 12:58:46 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 198978, 215831); // E (F, cs)
+// Device view-level: 1,7
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 209023, 234041); // E (F, cs)
+// Device view-level: 2,6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 166 MB. Current time: 3/6/21, 12:58:54 PM GMT+07:00
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 173 MB. Current time: 3/6/21, 12:58:56 PM GMT+07:00
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 167 MB. Current time: 3/6/21, 12:58:56 PM GMT+07:00
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 166 MB. Current time: 3/6/21, 12:58:57 PM GMT+07:00
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 196 MB. Current time: 3/6/21, 12:58:57 PM GMT+07:00
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 166 MB. Current time: 3/6/21, 12:58:58 PM GMT+07:00
+// Elapsed time: 11 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 219846, 78506); // E (F, cs)
+// Device view-level: 0,0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 166 MB. Current time: 3/6/21, 12:59:03 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 117532, 8145); // E (F, cs)
+// Device view-level: 1,4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 121020, 14918); // E (F, cs)
+// Device view-level: 2,1
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 127789, 22629); // E (F, cs)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 133059, 24721); // E (F, cs)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 145962, 26813); // E (F, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 165 MB. Current time: 3/6/21, 12:59:11 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 159330, 26775); // E (F, cs)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 163941, 28828); // E (F, cs)
+// Device view-level: 0,0
+selectButton(PAResourceAtoD.DeviceView_SHOW_CELL_CONNECTIONS, "Device_showinstanceconnections"); // x (g, cs): TRUE
+selectButton(PAResourceAtoD.DeviceView_SHOW_CELL_CONNECTIONS, "Device_showinstanceconnections"); // x (g, cs): TRUE
+selectButton(PAResourceCommand.PACommandNames_DRAW_PBLOCK_MODE, "Device_pblock_mode"); // x (g, cs): TRUE
+// Run Command: PAResourceCommand.PACommandNames_DRAW_PBLOCK_MODE
+selectButton(PAResourceCommand.PACommandNames_DRAW_PBLOCK_MODE, "Device_pblock_mode"); // x (g, cs): FALSE
+selectButton(PAResourceCommand.PACommandNames_DRAW_PBLOCK_MODE, "Device_pblock_mode"); // x (g, cs): FALSE
+// Run Command: PAResourceCommand.PACommandNames_DRAW_PBLOCK_MODE
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // x (g, cs): TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 1,1
+// Device view-level: 0,0
+// RouteApi::getRouteInfo length(bytes): 400183
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // x (g, cs): FALSE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// HMemoryUtils.trashcanNow. Engine heap size: 2,381 MB. GUI used memory: 172 MB. Current time: 3/6/21, 12:59:29 PM GMT+07:00
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (J, cs)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (J, cs)
+// Elapsed time: 12 seconds
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5); // a (J, cs)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, pll_adc_clk]", 10); // a (J, cs)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, pll_adc_clk, Setup -4,520 ns]", 11, false); // a (J, cs)
+// PAPropertyPanels.initPanels (Path 41) elapsed time: 1.2s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 41 ; -4.5198245 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[28] ; 12.08892 ; 8.287 ; 3.8019192 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 0, "Path 41", 0); // i (J, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  1329 ms.
+// PAPropertyPanels.initPanels (Path 42) elapsed time: 0.2s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 42 ; -4.4712076 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[24] ; 12.040303 ; 8.287 ; 3.753303 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 1, "i_scope/i_dfilt1_cha/aa_mult/CLK", 4); // i (J, cs)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 42 ; -4.4712076 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[24] ; 12.040303 ; 8.287 ; 3.753303 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 1, "i_scope/i_dfilt1_cha/aa_mult/CLK", 4, false, false, false, false, true); // i (J, cs) - Double Click
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 41 ; -4.5198245 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[28] ; 12.08892 ; 8.287 ; 3.8019192 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 0, "i_scope/i_dfilt1_cha/aa_mult/CLK", 4); // i (J, cs)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 41 ; -4.5198245 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[28] ; 12.08892 ; 8.287 ; 3.8019192 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 0, "i_scope/i_dfilt1_cha/aa_mult/CLK", 4); // i (J, cs)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 41 ; -4.5198245 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[28] ; 12.08892 ; 8.287 ; 3.8019192 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 0, "i_scope/i_dfilt1_cha/aa_mult/CLK", 4, false, false, false, false, true); // i (J, cs) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Path 41 - red_pitaya_top_timing_summary_routed", 5); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_PATH_TABLE, "Path Table"); // j
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Path 41 - red_pitaya_top_timing_summary_routed", 5); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_PATH_TABLE, "Path Table"); // j
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true, false, false, false, false, true); // u (J, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 5); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "Cancel"); // JButton (v, B)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (J, cs) - Node
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_PHYSICAL_CONSTRAINTS_WINDOW, "Physical Constraints"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_PHYSICAL_CONSTRAINTS_WINDOW
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_top.sv", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_scope.v", 4); // m (l, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// g (cs): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_NO, "No"); // a (g)
+// bz (cs):  Open Synthesized Design : addNotify
+dismissDialog("Close Design"); // g (cs)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z010clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,419 MB. GUI used memory: 173 MB. Current time: 3/6/21, 1:00:53 PM GMT+07:00
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,444 MB. GUI used memory: 173 MB. Current time: 3/6/21, 1:00:57 PM GMT+07:00
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (aa_mult (DSP48E1)) elapsed time: 0.4s
+// WARNING: HEventQueue.dispatchEvent() is taking  1412 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.257 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 672 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:206] INFO: [Timing 38-2] Deriving generated clocks [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:206] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:206] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:207] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:208] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:210] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:211] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:212] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:213] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:214] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:215] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:215] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:216] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:216] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc] Parsing XDC File [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:7] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:8] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:9] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:12] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:12] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:13] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:13] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 56 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 16 instances   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 2 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 38 instances  
+// Device view-level: 0,0
+// [Engine Memory]: 2,510 MB (+10482kb) [01:06:44]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+// 'dZ' command handler elapsed time: 12 seconds
+// V (cs): Critical Messages: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Open Synthesized Design"); // bz (cs)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (V)
+dismissDialog("Critical Messages"); // V (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 30, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 28, true); // u (J, cs) - Node
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design impl_1 
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,515 MB. GUI used memory: 148 MB. Current time: 3/6/21, 1:01:13 PM GMT+07:00
+// Engine heap size: 2,515 MB. GUI used memory: 149 MB. Current time: 3/6/21, 1:01:13 PM GMT+07:00
+// WARNING: HEventQueue.dispatchEvent() is taking  2110 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bz (cs)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Synthesis", "Synthesized Design", "DesignTask.NETLIST_PLANNING");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,515 MB. GUI used memory: 118 MB. Current time: 3/6/21, 1:01:17 PM GMT+07:00
+// Engine heap size: 2,515 MB. GUI used memory: 118 MB. Current time: 3/6/21, 1:01:17 PM GMT+07:00
+// WARNING: HEventQueue.dispatchEvent() is taking  1424 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bz (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 27, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 29, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cs):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,515 MB. GUI used memory: 115 MB. Current time: 3/6/21, 1:01:26 PM GMT+07:00
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.239 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 672 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3214.449 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 56 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 16 instances   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 2 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 38 instances  
+// Device view-level: 0,0
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 2.8s
+// Device view-level: 0,0
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  3680 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1357 ms.
+// 'dZ' command handler elapsed time: 14 seconds
+// V (cs): Critical Messages: addNotify
+// Elapsed time: 14 seconds
+dismissDialog("Open Implemented Design"); // bz (cs)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (V)
+dismissDialog("Critical Messages"); // V (cs)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5); // a (J, cs)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, pll_adc_clk]", 10); // a (J, cs)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, pll_adc_clk, Setup -4,520 ns]", 11, false); // a (J, cs)
+// PAPropertyPanels.initPanels (Path 41) elapsed time: 0.3s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 41 ; -4.5198245 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[28] ; 12.08892 ; 8.287 ; 3.8019192 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 0, "Path 41", 0); // i (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,557 MB. GUI used memory: 180 MB. Current time: 3/6/21, 1:01:43 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 122283, 198863); // E (F, cs)
+// Device view-level: 1,2
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 138600, 217179); // E (F, cs)
+// Device view-level: 1,5
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 42 ; -4.4712076 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[24] ; 12.040303 ; 8.287 ; 3.753303 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 1, "-4.4712076", 1); // i (J, cs)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 143143, 249351); // E (F, cs)
+// Device view-level: 2,9
+// HMemoryUtils.trashcanNow. Engine heap size: 2,566 MB. GUI used memory: 185 MB. Current time: 3/6/21, 1:01:53 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 148504, 254085); // E (F, cs)
+// Device view-level: 0,0
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 44 ; -4.4712076 ; 3 ; 9 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[26] ; 12.040303 ; 8.287 ; 3.753303 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 3, "9", 3); // i (J, cs)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 50 ; -4.4117475 ; 3 ; 8 ; i_scope/i_dfilt1_cha/aa_mult/CLK ; i_scope/i_dfilt1_cha/aa_mult/A[12] ; 11.980843 ; 8.287 ; 3.693842 ; 8.0 ; pll_adc_clk ; pll_adc_clk ;  ; 0.06890382", 9, "Path 50", 0); // i (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,566 MB. GUI used memory: 179 MB. Current time: 3/6/21, 1:01:59 PM GMT+07:00
+// Elapsed time: 20 seconds
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, pll_adc_clk]", 10); // a (J, cs)
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5); // a (J, cs)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths]", 6); // a (J, cs)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, adc_clk to pll_adc_clk]", 7, true); // a (J, cs) - Node
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, adc_clk to pll_adc_clk]", 7); // a (J, cs)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, adc_clk to pll_adc_clk, Hold -2,162 ns]", 9, false); // a (J, cs)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 91 ; -2.1622357 ; 1 ; 1 ; adc_dat_i[1][3] ; adc_dat_raw_reg[1][1]/D ; 0.805146 ; 0.805146 ; 0.0 ; 0.0 ; adc_clk ; pll_adc_clk ;  ; 0.1658514", 0, "Path 91", 0); // i (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,582 MB. GUI used memory: 178 MB. Current time: 3/6/21, 1:02:34 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 287890, 332570); // E (F, cs)
+// Device view-level: 2,1
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 300469, 334149); // E (F, cs)
+// Device view-level: 3,0
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 92 ; -2.152845 ; 1 ; 1 ; adc_dat_i[1][2] ; adc_dat_raw_reg[1][0]/D ; 0.81053674 ; 0.810537 ; 0.0 ; 0.0 ; adc_clk ; pll_adc_clk ;  ; 0.1658514", 1, "Path 92", 0); // i (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,582 MB. GUI used memory: 178 MB. Current time: 3/6/21, 1:02:39 PM GMT+07:00
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 95 ; -2.1399639 ; 1 ; 1 ; adc_dat_i[1][14] ; adc_dat_raw_reg[1][12]/D ; 0.82441807 ; 0.82441795 ; 0.0 ; 0.0 ; adc_clk ; pll_adc_clk ;  ; 0.1658514", 4, "Path 95", 0); // i (J, cs)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 303896, 338679); // E (F, cs)
+// Device view-level: 0,0
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 93 ; -2.1509616 ; 1 ; 1 ; adc_dat_i[1][8] ; adc_dat_raw_reg[1][6]/D ; 0.81642 ; 0.81642 ; 0.0 ; 0.0 ; adc_clk ; pll_adc_clk ;  ; 0.1658514", 2, "1", 2); // i (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,635 MB. GUI used memory: 179 MB. Current time: 3/6/21, 1:02:46 PM GMT+07:00
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 92 ; -2.152845 ; 1 ; 1 ; adc_dat_i[1][2] ; adc_dat_raw_reg[1][0]/D ; 0.81053674 ; 0.810537 ; 0.0 ; 0.0 ; adc_clk ; pll_adc_clk ;  ; 0.1658514", 1, "-2.152845", 1); // i (J, cs)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 96 ; -2.1377807 ; 1 ; 1 ; adc_dat_i[0][15] ; adc_dat_raw_reg[0][13]/D ; 0.8226009 ; 0.82260096 ; 0.0 ; 0.0 ; adc_clk ; pll_adc_clk ;  ; 0.1658514", 5, "-2.1377807", 1); // i (J, cs)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 99 ; -2.1222467 ; 1 ; 1 ; adc_dat_i[1][9] ; adc_dat_raw_reg[1][7]/D ; 0.83013487 ; 0.830135 ; 0.0 ; 0.0 ; adc_clk ; pll_adc_clk ;  ; 0.1658514", 8, "-2.1222467", 1); // i (J, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,635 MB. GUI used memory: 179 MB. Current time: 3/6/21, 1:02:49 PM GMT+07:00
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 97 ; -2.1328454 ; 1 ; 1 ; adc_dat_i[0][3] ; adc_dat_raw_reg[0][1]/D ; 0.82753605 ; 0.82753605 ; 0.0 ; 0.0 ; adc_clk ; pll_adc_clk ;  ; 0.1658514", 6, "-2.1328454", 1); // i (J, cs)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 291962, 282345); // E (F, cs)
+// Device view-level: 1,9
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 299059, 294281); // E (F, cs)
+// Device view-level: 2,8
+// Elapsed time: 10 seconds
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths]", 6); // a (J, cs)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Other Path Groups]", 7); // a (J, cs)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Other Path Groups, **async_default**]", 8); // a (J, cs)
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Other Path Groups, **async_default**, pll_adc_clk to pll_ser_clk]", 10); // a (J, cs)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Other Path Groups, **async_default**, pll_adc_clk to pll_ser_clk, Setup -0,030 ns]", 11, false); // a (J, cs)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Other Path Groups, **async_default**, pll_adc_clk to pll_ser_clk, Hold 0,746 ns]", 12, false); // a (J, cs)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Other Path Groups, **async_default**, pll_adc_clk to pll_ser_clk, Setup -0,030 ns]", 11, false); // a (J, cs)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 181 ; -0.030466296 ; 1 ; 19 ; i_daisy/cfg_tx_en_reg/C ; i_daisy/i_tx/ODDR_clk/R ; 3.0434623 ; 0.634 ; 2.4094625 ; 4.0 ; pll_adc_clk ; pll_ser_clk ;  ; 0.18890382", 0, "19", 3); // i (J, cs)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 305972, 300228); // E (F, cs)
+// Device view-level: 0,0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,635 MB. GUI used memory: 183 MB. Current time: 3/6/21, 1:03:13 PM GMT+07:00
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 152147, 202936); // E (F, cs)
+// Device view-level: 1,0
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 169635, 218354); // E (F, cs)
+// Device view-level: 2,7
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 175279, 222446); // E (F, cs)
+// Device view-level: 3,8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 177531, 223931); // E (F, cs)
+// Device view-level: 0,0
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,635 MB. GUI used memory: 123 MB. Current time: 3/6/21, 1:03:28 PM GMT+07:00
+// Engine heap size: 2,635 MB. GUI used memory: 123 MB. Current time: 3/6/21, 1:03:28 PM GMT+07:00
+// WARNING: HEventQueue.dispatchEvent() is taking  1984 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bz (cs)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cs): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,635 MB. GUI used memory: 124 MB. Current time: 3/6/21, 1:03:32 PM GMT+07:00
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bz (cs)
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.xpr", 0); // r (J, cs)
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.xpr. Version: Vivado v2020.1 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1263 ms.
+// Tcl Message: open_project C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// Project name: redpitaya; location: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), ps : red_pitaya_ps (red_pitaya_ps.sv)]", 4, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// Elapsed time: 1248 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 13, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 13, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, "Go to Source"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_INSTANTIATION
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 13, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 13, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 13, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("red_pitaya_proc.vhd", 103, 236); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 102, 244); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("red_pitaya_proc.vhd", 135, 214); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+typeControlKey(null, null, 'z');
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 303 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 13, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 13, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("C:/Users/y.morgunov/workspace/A014-RedPitaya/ext example/rtl/red_pitaya_proc.vhd");
+// Tcl Message: update_files -from_files {{C:/Users/y.morgunov/workspace/A014-RedPitaya/ext example/rtl/red_pitaya_proc.vhd}} -to_files {{C:/Users/y.morgunov/workspace/A014-RedPitaya/ext example/rtl/red_pitaya_proc.vhd}} -filesets [get_filesets *] 
+// Tcl Message: ERROR: [Vivado 12-3481] Cannot replace a file with itself: 'C:/Users/y.morgunov/workspace/A014-RedPitaya/ext example/rtl/red_pitaya_proc.vhd' 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-3481] Cannot replace a file with itself: 'C:/Users/y.morgunov/workspace/A014-RedPitaya/ext example/rtl/red_pitaya_proc.vhd'  
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 13, false); // B (F, cs)
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA (aL, cs)
+// Run Command: RDIResourceCommand.RDICommands_RESET_LAYOUT
+// Run Command: RDIResourceCommand.RDICommands_RESET_LAYOUT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), pdm : red_pitaya_pdm (red_pitaya_pdm.sv)]", 7, false); // B (F, cs)
+// Run Command: RDIResourceCommand.RDICommands_RESET_LAYOUT
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA (aL, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv)]", 2, true); // B (F, cs) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv)]", 2); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, red_pitaya_proc.vhd]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, red_pitaya_proc.vhd]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, red_pitaya_proc.vhd]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, red_pitaya_proc.vhd]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, red_pitaya_proc.vhd]", 2, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectCodeEditor("red_pitaya_proc.vhd (2)", 421, 148); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd (2)", 3); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cs) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv)]", 3); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 14, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 14, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files {{C:/Users/y.morgunov/workspace/A014-RedPitaya/ext example/rtl/red_pitaya_proc.vhd}} 
+selectCodeEditor("red_pitaya_proc.vhd", 208, 179); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 14, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Elapsed time: 10 seconds
+selectCodeEditor("red_pitaya_proc.vhd", 196, 84); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_proc.vhd", 2); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 14, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 14, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cs)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_proc.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_proc.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, red_pitaya_proc.vhd]", 2, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cs)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new/red_pitaya_proc.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new/red_pitaya_proc.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, red_pitaya_proc.vhd]", 2, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", false); // g (Q, aE): FALSE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'c' command handler elapsed time: 7 seconds
+dismissDialog("Remove Sources"); // aE (cs)
+// Tcl Message: remove_files  C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new/red_pitaya_proc.vhd 
+// Tcl Message: file delete -force C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new/red_pitaya_proc.vhd 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 25 seconds
+setFileChooser("C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl/red_pitaya_proc.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 29 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl/red_pitaya_proc.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 12, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, red_pitaya_top (red_pitaya_top.sv), i_proc : red_pitaya_proc(Behavioral) (red_pitaya_proc.vhd)]", 12, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("red_pitaya_proc.vhd", 306, 192); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,635 MB. GUI used memory: 111 MB. Current time: 3/6/21, 1:33:34 PM GMT+07:00
+// Elapsed time: 75 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+// Elapsed time: 16 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+// Elapsed time: 49 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_WRITE_PROJECT_TCL, "Write Tcl..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_WRITE_PROJECT_TCL
+// aL (cs): Write Project to Tcl: addNotify
+selectButton(PAResourceTtoZ.WriteProjectTclDialog_PROJECT_TCL_FILE, (String) null); // t (aM, aL)
+// Elapsed time: 22 seconds
+setFileChooser("C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/red_pitaya_avarage_filter_Z10.tcl");
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Tcl Command: 'write_project_tcl -use_bd_files {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/red_pitaya_avarage_filter_Z10.tcl}'
+// 'p' command handler elapsed time: 40 seconds
+dismissDialog("Write Project to Tcl"); // aL (cs)
+// bz (cs):  Write Project to Tcl : addNotify
+// Tcl Message: write_project_tcl -use_bd_files {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/red_pitaya_avarage_filter_Z10.tcl} 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message:  
+// Tcl Message:  
+// Tcl Message: write_project_tcl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+dismissDialog("Write Project to Tcl"); // bz (cs)
+selectButton("OptionPane.button", "Yes"); // JButton (v, B)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_avarage_filter_Z10.tcl", 3); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
