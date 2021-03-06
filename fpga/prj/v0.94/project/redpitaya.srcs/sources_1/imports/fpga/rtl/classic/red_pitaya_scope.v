@@ -50,6 +50,9 @@
 module red_pitaya_scope #(
   parameter RSZ = 14  // RAM size 2^RSZ
 )(
+   // // Simple Moving Average
+   input      [ 14-1: 0] adc_in          ,  
+   output     [ 14-1: 0] adc_out         ,
    // ADC
    input                 adc_clk_i       ,  // ADC clock
    input                 adc_rstn_i      ,  // ADC reset - active low
