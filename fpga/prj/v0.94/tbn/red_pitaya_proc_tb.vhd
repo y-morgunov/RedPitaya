@@ -74,7 +74,12 @@ begin
   singen : process(clk_i)
   begin
     if(rising_edge(clk_i)) then
-      adc_i <= std_logic_vector(to_signed(20*sine(i), 14));
+--      adc_i <= std_logic_vector(to_signed(20*sine(i), 14));
+      if (sine(i) > 0) then
+        adc_i <= std_logic_vector(to_signed(2000, 14));
+      else
+        adc_i <= std_logic_vector(to_signed(-2000, 14));
+      end if;
       i     <= i+ 1;
       if(i = 29) then
         i <= 0;

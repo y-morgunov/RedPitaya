@@ -13,7 +13,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-entity red_pitaya_proc is
+entity red_pitaya_proc is  
   port (
     clk_i   : in  std_logic;                      -- bus clock 
     rstn_i  : in  std_logic;                      -- bus reset - active low
@@ -31,10 +31,40 @@ entity red_pitaya_proc is
 end red_pitaya_proc;
 
 architecture Behavioral of red_pitaya_proc is
- signal reg: std_logic_vector(7 downto 0);
+    component moving_average
+        port ( 
+            data_i   : in std_logic_vector (13 downto 0);
+            clk_i    : in std_logic;
+            rstn_i   : in std_logic;                    
+            tag_i    : in unsigned (1 downto 0);
+            data_o   : out std_logic_vector (13 downto 0));
+    end component;
+  
+ signal reg:   std_logic_vector(7 downto 0);
+ signal i:     unsigned(1 downto 0) := "00";
 begin
--- add your code here
 
+-- add your code here
+process (clk_i)
+begin
+    if (rising_edge(clk_i)) then
+        i <= i + 1;
+        
+        if (i = "10") then
+            i <= "00";
+        end if;
+    end if;
+end process;
+
+rp_average: 
+    moving_average 
+        port map (
+            data_i => adc_i,
+            clk_i => clk_i,
+            rstn_i => rstn_i,
+            tag_i => i,
+            data_o => adc_o
+        );
 -- bus signals and read logic for register: reg
 err_o <= '0';
 
