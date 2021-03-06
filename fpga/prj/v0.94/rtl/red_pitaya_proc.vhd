@@ -41,7 +41,7 @@ architecture Behavioral of red_pitaya_proc is
     end component;
   
  signal reg:   std_logic_vector(7 downto 0);
- signal tag_i: unsigned(1 downto 0) := "10";
+ signal tag_i: unsigned(1 downto 0) := "11";
 begin
 
 -- add your code here

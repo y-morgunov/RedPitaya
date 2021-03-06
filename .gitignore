@@ -28,3 +28,6 @@
 /fpga/prj/v0.94/.gitignore
 /fpga/prj/v0.94/.Xil
 /fpga/prj/v0.94/project
+/fpga/vivado.jou
+/fpga/vivado.log
+/fpga/vivado_pid18180.str
