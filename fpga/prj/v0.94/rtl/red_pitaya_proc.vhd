@@ -41,28 +41,17 @@ architecture Behavioral of red_pitaya_proc is
     end component;
   
  signal reg:   std_logic_vector(7 downto 0);
- signal i:     unsigned(1 downto 0) := "00";
+ signal tag_i: unsigned(1 downto 0) := "10";
 begin
 
 -- add your code here
-process (clk_i)
-begin
-    if (rising_edge(clk_i)) then
-        i <= i + 1;
-        
-        if (i = "10") then
-            i <= "00";
-        end if;
-    end if;
-end process;
-
 rp_average: 
     moving_average 
         port map (
             data_i => adc_i,
             clk_i => clk_i,
             rstn_i => rstn_i,
-            tag_i => i,
+            tag_i => tag_i,
             data_o => adc_o
         );
 -- bus signals and read logic for register: reg
