@@ -2616,3 +2616,97 @@ selectButton("OptionPane.button", "Yes"); // JButton (v, B)
 // Elapsed time: 12 seconds
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "red_pitaya_avarage_filter_Z10.tcl", 3); // m (l, cs)
 closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+// Elapsed time: 463 seconds
+selectCodeEditor("red_pitaya_proc.vhd", 165, 203); // bP (w, cs)
+// Elapsed time: 134 seconds
+selectCodeEditor("red_pitaya_proc.vhd", 109, 109); // bP (w, cs)
+selectCodeEditor("red_pitaya_proc.vhd", 109, 109, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "red_pitaya_proc.vhd", 'c'); // bP (w, cs)
+// Elapsed time: 132 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 4 seconds
+dismissDialog("Add Sources"); // c (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl/red_pitaya_proc.vhd");
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; red_pitaya_proc.vhd ; xil_defaultlib ; C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl", 0, "C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl", 4); // bQ (J, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; red_pitaya_proc.vhd ; xil_defaultlib ; C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl", 0, "C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl", 4); // bQ (J, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; red_pitaya_proc.vhd ; xil_defaultlib ; C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl", 0, "C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/rtl", 4, false, false, false, false, true); // bQ (J, c) - Double Click
+// Elapsed time: 37 seconds
+selectButton("BACK", "< Back"); // JButton (j, c)
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 50 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/tbn/red_pitaya_proc_tb.vhd");
+// Elapsed time: 23 seconds
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 40 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/v0.94/tbn/red_pitaya_proc_tb.vhd 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 44); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 45); // B (F, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_WRITE_PROJECT_TCL, "Write Tcl..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_WRITE_PROJECT_TCL
+// aL (cs): Write Project to Tcl: addNotify
+selectButton(PAResourceTtoZ.WriteProjectTclDialog_PROJECT_TCL_FILE, (String) null); // t (aM, aL)
+setFileChooser("C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/red_pitaya_average_filter_Z10.tcl");
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+selectCheckBox(PAResourceTtoZ.WriteProjectTclDialog_RECREATE_BLOCK_DESIGNS_USING_TCL, "Recreate Block Designs using Tcl", true); // g (Q, aL): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Tcl Command: 'write_project_tcl -force {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/red_pitaya_average_filter_Z10.tcl}'
+// 'p' command handler elapsed time: 17 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+dismissDialog("Write Project to Tcl"); // aL (cs)
+// Tcl Message: write_project_tcl -force {C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/red_pitaya_average_filter_Z10.tcl} 
+// bz (cs):  Write Project to Tcl : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// Tcl Message: INFO: [BD 5-453] Writing out BD creation steps for system as a TCL proc 
+// Tcl Message:  
+// Tcl Message:  
+// Tcl Message: write_project_tcl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3214.449 ; gain = 0.000 
+dismissDialog("Write Project to Tcl"); // bz (cs)
+selectButton("OptionPane.button", "No"); // JButton (v, B)
