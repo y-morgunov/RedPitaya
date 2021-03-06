@@ -25,3 +25,6 @@
 *.hex
 # backups
 *~
+/fpga/prj/v0.94/.gitignore
+/fpga/prj/v0.94/.Xil
+/fpga/prj/v0.94/project
