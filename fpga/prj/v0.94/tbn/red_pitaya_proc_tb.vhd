@@ -97,20 +97,22 @@ begin
 
     wait for T;
     rstn_i  <= '1';  -- deactivate reset, write to register
-    wdata_i <= x"00000005";
+    addr_i  <= "00000000000000000000000000000000";
+    wdata_i <= x"00000002";
     wen_i   <= '1';
 
     wait for T;
     wen_i <= '0';
 
-    wait for 100*T;                      -- entry of a new value in the register
-    wdata_i <= x"00000009";
+    wait for 10000*T;                      -- entry of a new value in the register
+    wdata_i <= x"00000003";
     wen_i   <= '1';
 
     wait for T;
+    addr_i  <= X"00000000";
     wen_i <= '0';
 
-    wait for 100*T;
+    wait for 10000*T;
     sim <= '1';                         -- stop the simulation
     wait;
   end process;

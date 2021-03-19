@@ -32,40 +32,47 @@ entity moving_average is
 end moving_average;
 
 architecture Behavioral of moving_average is
-    type mem_t is array (0 to 2) of signed (13 downto 0);
+    type mem_t is array (0 to 7) of signed (13 downto 0);
     
-    signal mean: mem_t; -- buffer for moving average algorithm
-    signal counter: unsigned(1 downto 0);
--- signal mean:   std_logic_vector(13 downto 0) := "00000000000000";  -- store the mean value of adc_arr
+    signal regs: mem_t; -- buffer for moving average algorithm
+    signal sum: signed(13 downto 0);
 begin
 
---data_o <= std_logic_vector(resize(shift_right((adc_arr) * 85, 8), 14));
+regs(0) <= signed(data_i);
 
---TODO - make with dynamic size, add to register for configuration
 process (clk_i)
 begin
     if(rising_edge(clk_i)) then
         if (rstn_i = '0') then
-            -- TODO - clean adc_arr
-        else
-            counter <= counter + 1;
+            sum <= "00000000000000";
+        else            
             case tag_i is
-                -- (mean)
-                when "01" => data_o <= std_logic_vector(mean(to_integer(to_unsigned(0, 8))));
+                -- regs
+                when "01" => data_o <= std_logic_vector(sum);
                 
-                -- (mean) / 2
-                when "10" => data_o <= std_logic_vector(shift_right(mean(to_integer(to_unsigned(1, 8))), 1));
+                -- regs / 2
+                when "10" => data_o <= std_logic_vector(shift_right(sum, 1));
                 
-                -- (mean * 85) / 256
-                when "11" => data_o <= std_logic_vector(resize(shift_right(mean(to_integer(to_unsigned(2, 8))) * 85, 8), 14));
-                
-                -- (mean * 85) / 256
-                when others => data_o <= std_logic_vector(resize(shift_right(mean(to_integer(to_unsigned(2, 8))) * 85, 8), 14));
+                -- (regs * 85) / 256
+                when "11" => data_o <= std_logic_vector(resize(shift_right(sum * 85, 8), 14));
+                     
+                -- (regs * 85) / 256
+                when others => data_o <= std_logic_vector(resize(shift_right(sum * 85, 8), 14));
             end case;
             
-            mean(to_integer(to_unsigned(0, 8))) <= signed(data_i);
-            mean(to_integer(to_unsigned(1, 8))) <= mean(to_integer(to_unsigned(0, 8))) + signed(data_i);
-            mean(to_integer(to_unsigned(2, 8))) <= mean(to_integer(to_unsigned(1, 8))) + signed(data_i);
+            if (tag_i(1) = '1') then
+                regs(1) <= regs(0);
+            else
+                regs(1) <= "00000000000000";
+            end if;
+            
+            if (tag_i(0) = '1') then
+                regs(2) <= regs(1);
+            else
+                regs(2) <= "00000000000000";
+            end if;
+                        
+            sum <= regs(0) + regs(1) + regs(2);
         end if;
     end if;
 end process;

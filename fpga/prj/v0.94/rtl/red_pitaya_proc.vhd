@@ -41,7 +41,7 @@ architecture Behavioral of red_pitaya_proc is
     end component;
   
  signal reg:   std_logic_vector(7 downto 0);
- signal tag_i: unsigned(1 downto 0) := "11";
+ signal tag_i: unsigned(1 downto 0) := "01";
 begin
 
 -- add your code here
@@ -57,17 +57,23 @@ rp_average:
 -- bus signals and read logic for register: reg
 err_o <= '0';
 
-pbusr: process(addr_i, wen_i, ren_i, reg)
+pbusr: process(clk_i)
 begin
-  if (wen_i or ren_i)='1' then
-    ack_o <= '1';
-  end if;   
-  
-  if addr_i(19 downto 0)=X"00000" then 
-      rdata_o <= X"000001" & reg;         
-  else
-      rdata_o <= (others=>'0');   
-  end if;
+    if(rising_edge(clk_i)) then
+      if (wen_i or ren_i)='1' then
+        ack_o <= '1';
+      end if;   
+      
+      if (rstn_i = '0') then
+        tag_i <= "01";
+      else
+        case addr_i(19 downto 0) is
+            when X"00008" => tag_i <= unsigned(wdata_i(1 downto 0));
+            
+            when others => rdata_o <= X"00000000";
+        end case;
+      end if;
+    end if;
 end process;
 
 end Behavioral;
