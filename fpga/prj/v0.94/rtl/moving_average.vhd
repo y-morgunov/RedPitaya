@@ -24,18 +24,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.all;
 
 entity moving_average is
-    Port ( data_i   : in std_logic_vector (13 downto 0);    -- 
+    Port ( data_i   : in std_logic_vector (13 downto 0);    -- adc input data
            clk_i    : in std_logic;                         -- bus clock 
            rstn_i   : in std_logic;                         -- bus reset - active low
-           tag_i    : in unsigned (1 downto 0);             -- 
-           data_o   : out std_logic_vector (13 downto 0));  -- 
+           tag_i    : in unsigned (1 downto 0);             -- filter window size
+           data_o   : out std_logic_vector (13 downto 0));  -- filtered data
 end moving_average;
 
 architecture Behavioral of moving_average is
     type mem_t is array (0 to 2) of signed (13 downto 0);
     
     signal regs: mem_t; -- buffer for moving average algorithm
-    signal sum: signed(13 downto 0);
+    signal sum: signed(13 downto 0); -- register for storing the sum of register values
 begin
 
 regs(0) <= signed(data_i);

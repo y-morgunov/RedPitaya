@@ -65,6 +65,7 @@ begin
         tag_i <= "01";
       else
         case addr_i(19 downto 0) is
+            when X"00000" => rdata_o <= X"00000001";
             when X"00008" => tag_i <= unsigned(wdata_i(1 downto 0));
             
             when others => rdata_o <= X"00000000";
