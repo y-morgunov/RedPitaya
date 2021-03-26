@@ -32,7 +32,7 @@ entity moving_average is
 end moving_average;
 
 architecture Behavioral of moving_average is
-    type mem_t is array (0 to 7) of signed (13 downto 0);
+    type mem_t is array (0 to 2) of signed (13 downto 0);
     
     signal regs: mem_t; -- buffer for moving average algorithm
     signal sum: signed(13 downto 0);

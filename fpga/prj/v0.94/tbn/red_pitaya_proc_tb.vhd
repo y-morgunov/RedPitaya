@@ -74,13 +74,13 @@ begin
   singen : process(clk_i)
   begin
     if(rising_edge(clk_i)) then
---      adc_i <= std_logic_vector(to_signed(20*sine(i), 14));
-      if (sine(i) > 0) then
-        adc_i <= std_logic_vector(to_signed(2000, 14));
-      else
-        adc_i <= std_logic_vector(to_signed(-2000, 14));
-      end if;
-      i     <= i+ 1;
+      adc_i <= std_logic_vector(to_signed(20*sine(i), 14));
+--      if (sine(i) > 0) then
+--        adc_i <= std_logic_vector(to_signed(2000, 14));
+--      else
+--        adc_i <= std_logic_vector(to_signed(-2000, 14));
+--      end if;
+      i <= i + 1;
       if(i = 29) then
         i <= 0;
       end if;
@@ -91,20 +91,20 @@ begin
   stim_proc : process
   begin
     rstn_i  <= '0';                     -- active reset
-    addr_i  <= "00000000000000000000000000000000";
-    wdata_i <= "00000000000000000000000000000000";
+    addr_i  <= X"00000008";
+    wdata_i <= X"00000000";
     wen_i   <= '0'; ren_i <= '0';
 
     wait for T;
     rstn_i  <= '1';  -- deactivate reset, write to register
-    addr_i  <= "00000000000000000000000000000000";
-    wdata_i <= x"00000002";
+    addr_i  <= X"00000008";
+    wdata_i <= X"00000002";
     wen_i   <= '1';
 
     wait for T;
     wen_i <= '0';
 
-    wait for 10000*T;                      -- entry of a new value in the register
+    wait for 100*T;                      -- entry of a new value in the register
     wdata_i <= x"00000003";
     wen_i   <= '1';
 
@@ -112,7 +112,7 @@ begin
     addr_i  <= X"00000000";
     wen_i <= '0';
 
-    wait for 10000*T;
+    wait for 100*T;
     sim <= '1';                         -- stop the simulation
     wait;
   end process;

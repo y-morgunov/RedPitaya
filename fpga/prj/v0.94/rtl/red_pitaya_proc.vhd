@@ -40,11 +40,9 @@ architecture Behavioral of red_pitaya_proc is
             data_o   : out std_logic_vector (13 downto 0));
     end component;
   
- signal reg:   std_logic_vector(7 downto 0);
  signal tag_i: unsigned(1 downto 0) := "01";
 begin
 
--- add your code here
 rp_average: 
     moving_average 
         port map (
@@ -54,7 +52,6 @@ rp_average:
             tag_i => tag_i,
             data_o => adc_o
         );
--- bus signals and read logic for register: reg
 err_o <= '0';
 
 pbusr: process(clk_i)
