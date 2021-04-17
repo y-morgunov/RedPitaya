@@ -1,0 +1,3 @@
+[submodule "fpga/prj/Examples/guides"]
+	path = fpga/prj/Examples/guides
+	url = https://github.com/apotocnik/redpitaya_guide.git

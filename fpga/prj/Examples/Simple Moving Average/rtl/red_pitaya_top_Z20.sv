@@ -8,9 +8,9 @@
 /**
  * GENERAL DESCRIPTION:
  *
- * Top module connects PS part with rest of Red Pitaya applications.  
+ * Top module connects PS part with rest of Red Pitaya applications.
  *
- *                   /-------\      
+ *                   /-------\
  *   PS DDR <------> |  PS   |      AXI <-> custom bus
  *   PS MIO <------> |   /   | <------------+
  *   PS CLK -------> |  ARM  |              |
@@ -27,14 +27,14 @@
  *            \--------/   ^   \-----/      |
  *                         |                |
  *                         |  /-------\     |
- *                         -- |  ASG  | <---+ 
+ *                         -- |  ASG  | <---+
  *                            \-------/     |
  *                                          |
  *             /--------\                   |
  *    RX ----> |        |                   |
  *   SATA      | DAISY  | <-----------------+
- *    TX <---- |        | 
- *             \--------/ 
+ *    TX <---- |        |
+ *             \--------/
  *               |    |
  *               |    |
  *               (FREE)
@@ -49,7 +49,7 @@
  * send and received is at the moment undefined. This is left for the user.
  */
 
-module red_pitaya_top #(
+module red_pitaya_top_Z20 #(
   // identification
   bit [0:5*32-1] GITH = '0,
   // module numbers
@@ -152,7 +152,8 @@ logic                 adc_clk;
 logic                 adc_rstn;
 
 // stream bus type
-localparam type SBA_T = logic signed [14-1:0];  // acquire
+//localparam type SBA_T = logic signed [14-1:0];  // acquire
+localparam type SBA_T = logic signed [16-1:0];  // acquire  // JB 11/02/19
 localparam type SBG_T = logic signed [14-1:0];  // generate
 
 SBA_T [MNA-1:0]          adc_dat;
@@ -342,25 +343,25 @@ assign adc_clk_o = 2'b10;
 // ADC clock duty cycle stabilizer is enabled
 assign adc_cdcs_o = 1'b1 ;
 
-logic [2-1:0] [14-1:0] adc_dat_raw;
+logic [2-1:0] [16-1:0] adc_dat_raw; // JB 11/02/19
 
 // IO block registers should be used here
 // lowest 2 bits reserved for 16bit ADC
 always @(posedge adc_clk)
 begin
-  adc_dat_raw[0] <= adc_dat_i[0][16-1:2];
-  adc_dat_raw[1] <= adc_dat_i[1][16-1:2];
+  adc_dat_raw[0] <= adc_dat_i[0];
+  adc_dat_raw[1] <= adc_dat_i[1];
 end
-    
+
 // transform into 2's complement (negative slope)
-assign adc_dat[0] = digital_loop ? dac_a : {adc_dat_raw[0][14-1], ~adc_dat_raw[0][14-2:0]};
-assign adc_dat[1] = digital_loop ? dac_b : {adc_dat_raw[1][14-1], ~adc_dat_raw[1][14-2:0]};
+assign adc_dat[0] = digital_loop ? {2'b00, dac_a} : {adc_dat_raw[0][16-1], ~adc_dat_raw[0][16-2:0]};  // JB 11/02/19
+assign adc_dat[1] = digital_loop ? {2'b00, dac_b} : {adc_dat_raw[1][16-1], ~adc_dat_raw[1][16-2:0]};  // JB 11/02/19
 
 ////////////////////////////////////////////////////////////////////////////////
 // DAC IO
 ////////////////////////////////////////////////////////////////////////////////
 
-// Sumation of ASG and PID signal perform saturation before sending to DAC 
+// Sumation of ASG and PID signal perform saturation before sending to DAC
 assign dac_a_sum = asg_dat[0] + pid_dat[0];
 assign dac_b_sum = asg_dat[1] + pid_dat[1];
 
@@ -435,7 +436,7 @@ assign gpio.i[23:16] = exp_n_in;
 
 logic trig_asg_out;
 
-red_pitaya_scope i_scope (
+red_pitaya_scope_Z20 i_scope (
   // ADC
   .adc_a_i       (adc_dat[0]  ),  // CH 1
   .adc_b_i       (adc_dat[1]  ),  // CH 2
@@ -510,6 +511,7 @@ red_pitaya_pid i_pid (
   .sys_ack         (sys[3].ack  )
 );
 
+
 ////////////////////////////////////////////////////////////////////////////////
 // Daisy test code
 ////////////////////////////////////////////////////////////////////////////////
@@ -553,4 +555,4 @@ red_pitaya_daisy i_daisy (
 );
 
 
-endmodule: red_pitaya_top
+endmodule: red_pitaya_top_Z20

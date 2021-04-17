@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Mar 26 23:25:37 2021
+# Process ID: 21864
+# Current directory: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga
+# Command line: vivado.exe -source Average_project.tcl -tclargs Simple Moving Average
+# Log file: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/vivado.log
+# Journal file: C:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source Average_project.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
