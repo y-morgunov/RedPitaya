@@ -9,10 +9,11 @@
 # by Anton Potocnik, 02.10.2016 - 14.12.2017
 # ==================================================================================================
 
-#set project_name "1_led_blink"
-#set project_name "2_knight_rider"
-#set project_name "3_stopwatch"
-set project_name "4_frequency_counter"
+#set project_name "Led_blink"
+#set project_name "Knight_rider"
+#set project_name "Stopwatch"
+#set project_name "Frequency_counter"
+set project_name "Simple_moving_average"
 
 cd $project_name
-source block_design.tcl
+source make_project.tcl

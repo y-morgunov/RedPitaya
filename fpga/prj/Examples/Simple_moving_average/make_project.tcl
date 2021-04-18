@@ -1,11 +1,6 @@
-################################################################################
-# Vivado tcl script for building RedPitaya FPGA in non project mode
-#
-# Usage:
-# vivado -mode batch -source red_pitaya_vivado_project_Z10.tcl -tclargs projectname
-################################################################################
 
 set prj_name [lindex $argv 0]
+set fpga_path ../..
 puts "Project name: $prj_name"
 cd prj/Examples/$prj_name
 #cd prj/$::argv 0
@@ -14,11 +9,11 @@ cd prj/Examples/$prj_name
 # define paths
 ################################################################################
 
-set path_brd ./../../brd
+set path_brd ./$fpga_path/brd
 set path_rtl rtl
 set path_ip  ip
 set path_bd  project/redpitaya.srcs/sources_1/bd/system/hdl
-set path_sdc ../../../sdc
+set path_sdc ../$fpga_path/sdc
 set path_sdc_prj sdc
 set path_tbn tbn
 
@@ -54,11 +49,11 @@ generate_target all [get_files    system.bd]
 # 3. constraints
 ################################################################################
 
-add_files                         ../../../$path_rtl
+add_files                         ../$fpga_path/$path_rtl
 add_files                         $path_rtl
 add_files                         $path_bd
 
-update_files -from_files $path_rtl/red_pitaya_scope.v -to_files ../../../$path_rtl/classic/red_pitaya_scope.v -filesets [get_filesets *]
+update_files -from_files $path_rtl/red_pitaya_scope.v -to_files ../$fpga_path/$path_rtl/classic/red_pitaya_scope.v -filesets [get_filesets *]
 add_files -fileset sim_1 -norecurse $path_tbn/red_pitaya_proc_tb.vhd
 
 add_files -fileset constrs_1      $path_sdc/red_pitaya.xdc
