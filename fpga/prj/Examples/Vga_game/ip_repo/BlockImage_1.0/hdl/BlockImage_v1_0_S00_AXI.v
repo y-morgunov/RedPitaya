@@ -427,11 +427,11 @@
         .clk(S_AXI_ACLK),
         .hst(hst),
         .vst(vst),
-        .block_posx(posx[15:0]),
-        .block_posy(posy[15:0]),
-        .block_sizex(sizex[15:0]),
-        .block_sizey(sizey[15:0]),
-        .draw_color(draw_color[2:0]),
+        .block_posx(posx),
+        .block_posy(posy),
+        .block_sizex(sizex),
+        .block_sizey(sizey),
+        .draw_color(draw_color),
         .rgb_i(rgb_i),
         .rgb_o(rgb_o)
     );

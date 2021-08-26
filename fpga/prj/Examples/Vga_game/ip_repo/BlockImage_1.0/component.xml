@@ -314,21 +314,6 @@
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_testbench</spirit:name>
-        <spirit:displayName>Test Bench</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
-        <spirit:modelName>pic_tb</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>00d1873c</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
     </spirit:views>
     <spirit:ports>
       <spirit:port>
@@ -821,15 +806,6 @@
         <spirit:fileType>tclSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>src/pic_tb.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
   </spirit:fileSets>
   <spirit:description>VGA image output unit, can be combined for overlay with other units</spirit:description>
   <spirit:parameters>
@@ -933,7 +909,7 @@
       </xilinx:taxonomies>
       <xilinx:displayName>BlockImage_v1.0</xilinx:displayName>
       <xilinx:coreRevision>59</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-08-14T09:34:37Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-08-16T10:35:27Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7dce6f_ARCHIVE_LOCATION">c:/Projects/Vivado/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@61906617_ARCHIVE_LOCATION">c:/Projects/Vivado/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
@@ -1840,6 +1816,16 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5c9e51d5_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@56ca3d3_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@989f321_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@251faa1c_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6191c1e6_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1705bafa_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a46acde_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f06def1_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69efe843_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bc07f40_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26119fb6_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@740117f7_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dfdd149_ARCHIVE_LOCATION">c:/Users/y.morgunov/workspace/A014-RedPitaya/RedPitaya/fpga/prj/Examples/Vga_game/ip_repo/BlockImage_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

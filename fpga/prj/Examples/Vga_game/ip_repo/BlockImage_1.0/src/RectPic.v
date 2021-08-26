@@ -33,9 +33,9 @@ module RectPic #
     input wire [15 : 0] block_posy,  // The position of the rectangle on the y-axis
     input wire [15 : 0] block_sizex,  // The size of the rectangle on the x-axis
     input wire [15 : 0] block_sizey,  // The size of the rectangle on the y-axis
-    input wire [2 : 0] draw_color,
-    input wire [2 : 0] rgb_i,
-    output reg [2 : 0] rgb_o
+    input wire [2 : 0] draw_color,    // The color with which the object will be drawn
+    input wire [2 : 0] rgb_i,         // Sent to rgb_o when there is nothing to draw
+    output reg [2 : 0] rgb_o          
     );
         
     always @(posedge clk)
