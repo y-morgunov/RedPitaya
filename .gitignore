@@ -33,3 +33,6 @@
 /fpga/vivado_pid18180.str
 /fpga/prj/classic/project
 /fpga/prj/classic/.Xil
+/fpga/prj/Examples/Vga_game/Vga_game
+/fpga/prj/Examples/Vga_image/Vga_image
+/fpga/prj/Examples/Vga_draw/Vga_draw
