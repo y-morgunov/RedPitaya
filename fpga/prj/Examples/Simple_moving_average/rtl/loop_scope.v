@@ -1,5 +1,5 @@
 /**
- * $Id: red_pitaya_scope.v 965 2014-01-24 13:39:56Z matej.oblak $
+ * $Id: loop_scope.v 965 2014-01-24 13:39:56Z matej.oblak $
  *
  * @brief Red Pitaya oscilloscope application, used for capturing ADC data
  *        into BRAMs, which can be later read by SW.
@@ -47,9 +47,12 @@
  * 
  */
 
-module red_pitaya_scope #(
+module loop_scope #(
   parameter RSZ = 14  // RAM size 2^RSZ
 )(
+   // Simple Moving Average
+   input      [ 14-1: 0] adc_in          ,
+   output     [ 14-1: 0] adc_out         ,
    // ADC
    input                 adc_clk_i       ,  // ADC clock
    input                 adc_rstn_i      ,  // ADC reset - active low
@@ -413,12 +416,15 @@ always @(posedge adc_clk_i) begin
    end
 end
 
+// Simple Moving Average
 always @(posedge adc_clk_i) begin
-   if (adc_we && adc_dv) begin
-      adc_a_buf[adc_wp] <= adc_a_dat ;
-      adc_b_buf[adc_wp] <= adc_b_dat ;
-   end
+    if (adc_we && adc_dv) begin
+        adc_a_buf[adc_wp] <= adc_in ;
+        adc_b_buf[adc_wp] <= adc_b_dat ;
+    end
 end
+
+assign adc_out = adc_b_dat;
 
 // Read
 always @(posedge adc_clk_i) begin
